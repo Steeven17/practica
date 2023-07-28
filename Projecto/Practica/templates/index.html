@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangoPedia</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ChangoPedias</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="card mb-3">
+        <h3 class="card-header">El todo sobres los "MONOS"</h3>
+        <div class="card-body">
+          <h5 class="card-title">Monos</h5>
+          <h6 class="card-subtitle text-muted">El mono es de la familia de simiiformes y es considerado un mamífero primate con la misma orden taxonómica a la que pertenece el ser humano. Existen alrededor de 260 especies de mono conocidas alrededor del mundo. La mayoría de ellas son arborícolas, aunque existen excepciones como el babuino, que la mayor parte de su tiempo permanece en el suelo. A su vez, estos se diferencian de los simios porque estos últimos no tienen cola.
+
+            En este artículo de BIOenciclopedia encontrarás las características, distribución, comportamiento, alimentación, reproducción y amenazas del mono.</h6>
+        </div>
+        <img src="{%  static 'media/OIP.jpg' %}" alt="">
+        <div class="card-body">
+          <p class="card-text">Estas son las 3 cualidades que hacen a los monos unicos:</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">1. Un mono es un animal que puede reconocerse a sí mismo en una imagen especular.</li>
+          <li class="list-group-item">2. El estado de ánimo de un mono puede determinarse por su apariencia: si tiene el labio superior estirado, significa que el mono es agresivo.</li>
+          <li class="list-group-item">3. Los monos dedican gran parte de su tiempo libre a la belleza.</li>
+        </ul>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div>
+      </div>
+</body>
+</html>
